@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WNTI – Links</title>
+<meta name="description" content="WNTI – Journalismus für Winterthur. Alle Links und die neusten Artikel.">
+<meta property="og:title" content="WNTI – Links">
+<meta property="og:description" content="Journalismus für Winterthur – alle Links und die neusten Artikel.">
+<meta property="og:image" content="assets/team.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#292929;
+    --card:#3a3a3a;
+    --white:#ffffff;
+    --muted:#b8b8b8;
+    --radius-btn:32px;
+    --radius-card:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--bg);
+    font-family:'Faro Web','Archivo',system-ui,sans-serif;
+    color:var(--white);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:480px;margin:0 auto;padding:0 20px 48px}
+
+  /* Header */
+  .hero{position:relative;margin:16px 0 8px;border-radius:24px;overflow:hidden}
+  .hero img.photo{width:100%;display:block;aspect-ratio:4/3.4;object-fit:cover}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(41,41,41,.05) 30%,rgba(41,41,41,.92) 100%)}
+  .hero .brand{position:absolute;left:0;right:0;bottom:20px;text-align:center;padding:0 16px}
+  .hero .brand svg{width:180px;height:auto;display:block;margin:0 auto 6px}
+  .hero .tagline{font-weight:800;font-size:1.35rem;line-height:1.25}
+
+  /* Buttons */
+  .links{display:flex;flex-direction:column;gap:14px;margin:22px 0 10px}
+  .btn{
+    display:block;text-align:center;text-decoration:none;
+    background:var(--white);color:#111;
+    font-weight:600;font-size:1.02rem;
+    padding:17px 20px;border-radius:var(--radius-btn);
+    transition:transform .12s ease,opacity .12s ease;
+  }
+  .btn:hover{transform:scale(1.02)}
+  .btn:active{transform:scale(.98)}
+  .btn.ghost{background:transparent;color:var(--white);border:2px solid var(--white)}
+
+  /* Articles */
+  .section-title{
+    margin:34px 0 16px;font-weight:800;font-size:1.15rem;
+    letter-spacing:.02em;text-align:center;
+  }
+  #posts{display:flex;flex-direction:column;gap:14px}
+  .post{
+    display:flex;gap:14px;align-items:center;
+    background:var(--card);border-radius:var(--radius-card);
+    padding:12px;text-decoration:none;color:var(--white);
+    transition:transform .12s ease;
+  }
+  .post:hover{transform:scale(1.015)}
+  .post img{
+    width:86px;height:86px;object-fit:cover;flex:none;
+    border-radius:12px;background:#555;
+  }
+  .post .noimg{
+    width:86px;height:86px;flex:none;border-radius:12px;
+    background:#555;display:flex;align-items:center;justify-content:center;
+  }
+  .post .noimg svg{width:44px;opacity:.85}
+  .post .txt{min-width:0}
+  .post .date{font-size:.74rem;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+  .post h3{
+    font-size:.95rem;font-weight:600;line-height:1.35;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .more{display:block;text-align:center;margin-top:18px;color:var(--muted);font-size:.9rem;text-decoration:underline;text-underline-offset:3px}
+  .more:hover{color:var(--white)}
+
+  /* Footer */
+  footer{margin-top:40px;display:flex;justify-content:center;gap:26px}
+  footer a{color:var(--muted);display:inline-flex}
+  footer a:hover{color:var(--white)}
+  footer svg{width:26px;height:26px}
+  .imprint{margin-top:18px;text-align:center;font-size:.75rem;color:#777}
+  .imprint a{color:#999}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img class="photo" src="assets/team.jpg" alt="Das WNTI-Team">
+    <div class="shade"></div>
+    <div class="brand">
+      <!-- WNTI Logo -->
+      <svg viewBox="0 0 298.62 117.17" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WNTI">
+        <path fill="#ffffff" d="M110.89,30.03l-16.65,57.12h-15.58l-8.16-27.66-8.16,27.66h-15.58L30.03,30.03h16.07l8.73,37.04,8.57-37.04h14.2l8.49,37.04,8.73-37.04h16.07ZM173.12,87.14h-14.77l-19.34-30.11v30.11h-15.1V30.03h14.77l19.34,31.82v-31.82h15.1v57.12ZM187.78,30.03h26.93c3.86,0,7.26-.14,10.2-.41,2.94-.27,5.74-.82,8.4-1.63l3.43,13.14c-2.72.87-5.39,1.47-8,1.8-2.56.33-5.77.49-9.63.49v43.73h-15.1v-43.73h-16.24v-13.38ZM264.83,87.14h-15.01V30.03h15.01v57.12Z"/>
+      </svg>
+      <div class="tagline">Journalismus für Winterthur</div>
+    </div>
+  </div>
+
+  <nav class="links">
+    <a class="btn" href="https://wnti.ch/wintibrief">Newsletter abonnieren</a>
+    <a class="btn" href="https://wnti.ch/mitmachen">Mitglied werden</a>
+    <a class="btn ghost" href="https://wnti.ch">Zur Website</a>
+  </nav>
+
+  <h2 class="section-title">Die neusten Artikel</h2>
+  <div id="posts" aria-live="polite"></div>
+  <a class="more" href="https://wnti.ch">Alle Artikel auf wnti.ch</a>
+
+  <footer>
+    <a href="https://www.instagram.com/wnti.ch" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="https://linkedin.com/company/wnti-stadtmagazin/" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.13c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.76V23H8.34V8.31z"/></svg>
+    </a>
+    <a href="mailto:info@wnti.ch" aria-label="E-Mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path d="M3 6.5l9 7 9-7"/></svg>
+    </a>
+  </footer>
+
+  <p class="imprint"><a href="https://wnti.ch/impressum">Impressum</a> · <a href="https://wnti.ch/datenschutz">Datenschutz</a></p>
+</div>
+
+<script>
+(async function () {
+  const box = document.getElementById('posts');
+  const MONTHS = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+  function fmtDate(iso){
+    const d = new Date(iso);
+    if (isNaN(d)) return '';
+    return d.getDate() + '. ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear();
+  }
+  const NOIMG = '<div class="noimg"><svg viewBox="0 0 298.62 117.17"><path fill="#ffffff" d="M110.89,30.03l-16.65,57.12h-15.58l-8.16-27.66-8.16,27.66h-15.58L30.03,30.03h16.07l8.73,37.04,8.57-37.04h14.2l8.49,37.04,8.73-37.04h16.07ZM173.12,87.14h-14.77l-19.34-30.11v30.11h-15.1V30.03h14.77l19.34,31.82v-31.82h15.1v57.12ZM187.78,30.03h26.93c3.86,0,7.26-.14,10.2-.41,2.94-.27,5.74-.82,8.4-1.63l3.43,13.14c-2.72.87-5.39,1.47-8,1.8-2.56.33-5.77.49-9.63.49v43.73h-15.1v-43.73h-16.24v-13.38ZM264.83,87.14h-15.01V30.03h15.01v57.12Z"/></svg></div>';
+  try {
+    const res = await fetch('posts.json?v=' + Date.now());
+    if (!res.ok) throw new Error('posts.json fehlt');
+    const data = await res.json();
+    const posts = (data.posts || []).slice(0, 4);
+    if (!posts.length) throw new Error('keine Posts');
+    box.innerHTML = posts.map(p => `
+      <a class="post" href="${p.link}">
+        ${p.image ? `<img src="${p.image}" alt="" loading="lazy">` : NOIMG}
+        <div class="txt">
+          ${p.date ? `<div class="date">${fmtDate(p.date)}</div>` : ''}
+          <h3>${p.title.replace(/</g,'&lt;')}</h3>
+        </div>
+      </a>`).join('');
+  } catch (e) {
+    // Fallback: Bereich ausblenden, falls posts.json (noch) nicht existiert
+    document.querySelector('.section-title').style.display = 'none';
+    box.style.display = 'none';
+  }
+})();
+</script>
+</body>
+</html>
