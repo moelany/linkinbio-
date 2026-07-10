@@ -1,0 +1,28 @@
+name: Artikel-Feed aktualisieren
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"   # alle 2 Stunden
+  workflow_dispatch:          # manueller Start Ã¼ber den Actions-Tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Feed abrufen und posts.json schreiben
+        run: python3 scripts/update_feed.py
+
+      - name: Ãnderungen committen
+        run: |
+          git config user.name "feed-bot"
+          git config user.email "actions@github.com"
+          git add posts.json
+          git diff --cached --quiet || git commit -m "Neuste Artikel aktualisiert"
+          git push
